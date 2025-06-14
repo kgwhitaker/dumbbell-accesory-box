@@ -9,10 +9,10 @@
 include <BOSL2/std.scad>
 
 // *** Model Parameters ***
-/* [Model Parameters] */
+/* [Accessory Box] */
 
 // Angle of the dumbbell rack top in degrees.
-rack_angle = 156;
+rack_angle = 158;
 
 // Depth of the box on the rack in mm.
 rack_depth = 115;
@@ -28,6 +28,11 @@ corner_rounding = 2;
 
 // Accessory box wall thickness.
 wall_thickness = 2;
+
+/* [Magnetic Base] */
+
+// True = Put cutouts for magnets in the base of the box.
+magnet_holes = true;
 
 // The diameter of the magnets that will hold the box on the rack.
 magnet_diameter = 12;
@@ -71,7 +76,8 @@ module box_base() {
     difference() {
         prismoid(size1=[rack_depth, 0], size2=[rack_depth, box_base_length], h=base_height, rounding2=corner_rounding);
 
-        magnet_holes();   
+        if (magnet_holes)
+            magnet_holes();   
     }
 }
 
