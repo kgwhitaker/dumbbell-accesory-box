@@ -35,7 +35,7 @@ wall_thickness = 2;
 magnet_holes = true;
 
 // The diameter of the magnets that will hold the box on the rack.
-magnet_diameter = 12;
+magnet_diameter = 12.1;
 
 // The depth of the magnet holes in the base of the box.
 magnet_depth = 2;

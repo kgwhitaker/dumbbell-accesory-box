@@ -31,7 +31,7 @@ The `dumbbell-accessory-box.stl` file is the box that fits our dumbbell rack:
 - Each side of the v-shaped base is 92mm.
 - Box height is 70mm.
 
-The `*.3mf` file is a [Prusa Slicer](https://www.prusa3d.com/page/prusaslicer_424/) project files used to print the 
+The `*.3mf` file is a [Orca Slicer](https://orcaslicer.com) project files used to print the 
 model on our Prusa MK3S+.
 
 ## Dependencies and Building the 3D Model
