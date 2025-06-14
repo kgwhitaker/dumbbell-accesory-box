@@ -23,6 +23,9 @@ rack_side_length = 92;
 // Accessory box height.
 accessory_box_height = 70;
 
+// Corner rounding for the accessory box.
+corner_rounding = 2;
+
 // Accessory box wall thickness.
 wall_thickness = 2;
 
@@ -66,7 +69,7 @@ echo("base_height: ", base_height);
 //
 module box_base() {
     difference() {
-        prismoid(size1=[rack_depth, 0], size2=[rack_depth, box_base_length], h=base_height);
+        prismoid(size1=[rack_depth, 0], size2=[rack_depth, box_base_length], h=base_height, rounding2=corner_rounding);
 
         magnet_holes();   
     }
@@ -104,7 +107,7 @@ module accessory_box() {
 
     difference() {
         translate([0, 0, base_height]) {
-            cuboid(size=[rack_depth, box_base_length, accessory_box_height], anchor=BOT);
+            cuboid(size=[rack_depth, box_base_length, accessory_box_height], anchor=BOT, rounding = corner_rounding, except=BOT);
         }
 
         translate([0, 0, base_height + wall_thickness]) {
