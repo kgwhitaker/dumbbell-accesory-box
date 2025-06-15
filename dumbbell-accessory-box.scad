@@ -63,7 +63,7 @@ echo("box_base_length: ", box_base_length);
 base_gap_angle = (180 - rack_angle) / 2;
 
 //
-// Calculates the hight of the base prismoid.  
+// Calculates the height of the base prismoid.  
 // Using Sine function: https://en.wikipedia.org/wiki/Sine_and_cosine
 //
 base_height = (box_base_length / 2) * sin(base_gap_angle);
