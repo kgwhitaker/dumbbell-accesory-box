@@ -2,7 +2,7 @@
 
 The rack for our dumbbells has a v-shaped top and I wanted a small box that would fit on top of it
 to store small items. Because of the v-shape on top, I could not just put a box up there, hence this project. Since
-the dumbbell rack is steel, there are cutouts in the bottom of the base
+the dumbbell rack is steel, there are cutouts in the bottom of the base for magnets to hold it in place.  
 
 The box is parametric, so it can be customized for other applications where you need a box that has a v-shaped base.
 
@@ -34,6 +34,8 @@ The `dumbbell-accessory-box.stl` file is the box that fits our dumbbell rack:
 The `*.3mf` file is a [Orca Slicer](https://orcaslicer.com) project files used to print the 
 model on our Prusa MK3S+.
 
+Printing this model did require supports on one side of the v-shaped base.
+
 ## Dependencies and Building the 3D Model
 
 This model is built using the tools listed below. Install these tools and you can open up the SCAD file in this repo to create your own printable object. For OpenSCAD, I do recommend the [Development Snapshot](https://openscad.org/downloads.html#snapshots) installation.
@@ -42,3 +44,7 @@ This model is built using the tools listed below. Install these tools and you ca
 - [The Belfry OpenScad Library, v2.0.](https://github.com/BelfrySCAD/BOSL2)
 
 ## Example Output
+
+![Dumbbell Accessory Box](images/dumbbell-accessory-box.jpeg)
+
+![Accessory Box In Use](images/accessory-box-in-use.jpeg)
